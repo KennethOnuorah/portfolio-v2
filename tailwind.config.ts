@@ -8,11 +8,28 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      screens: {
+        'md': {'min': '810px'}
       },
+      animation: {
+        'blink': 'blink 1s infinite',
+        'levitate': 'levitate 5s ease-in-out infinite'
+      },
+      keyframes: {
+        'blink': {
+          '0%,49%': {opacity: '0'},
+          '50%,99%': {opacity: '1'},
+          '100%': {opacity: '0'},
+        },
+        'levitate': {
+          '0%': {transform: 'translateY(0px)'},
+          '50%': {transform: 'translateY(-35px)'},
+          '100%': {transform: 'translateY(0px)'},
+        }
+      },
+      // transitionProperty: {
+      //   'height': 'height'
+      // },
     },
   },
   plugins: [],
