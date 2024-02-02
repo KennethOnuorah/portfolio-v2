@@ -61,6 +61,7 @@ export default function NavBar() {
           href={'https://github.com/KennethOnuorah/portfolio-v2'}
           target='_blank' 
           className='transition-all opacity-50 font-semibold hover:opacity-100'
+          onClick={() => setIsMenuOpen(false)}
         >
           <GitHub size={60}/>
         </Link>
