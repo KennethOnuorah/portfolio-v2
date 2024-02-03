@@ -13,7 +13,7 @@ import { Typewriter } from "react-simple-typewriter"
 
 export default function Greetings() {
   const [isEditing, setIsEditing] = useState(false)
-  const {width,} = useViewportDimensions() as {width: number,}
+  const {width,} = useViewportDimensions()
 
   return (
     <section className="flex flex-col-reverse text-center justify-evenly items-center gap-16 mb-64 lg:flex-row lg:text-left">

@@ -4,7 +4,7 @@ import { Skeleton } from "@mui/material"
 import useViewportDimensions from "@/lib/hooks/useViewportDimensions"
 
 export default function ResumeSkeleton() {
-  const {width,} = useViewportDimensions() as {width: number,}
+  const {width,} = useViewportDimensions()
 
   return (
     <div className={`${width > 600 ? 'mx-28' : 'm-0'}`}>
