@@ -16,7 +16,7 @@ function generateMetadata() : Metadata {
 }
 
 export default function ProjectsPage() {
-  const {width,} = useViewportDimensions()
+  const {width,} = useViewportDimensions() as {width: number,}
 
   return (
     <main className={`mt-36 ${width < 750 ? 'px-6' : 'px-36'} mb-24`}>

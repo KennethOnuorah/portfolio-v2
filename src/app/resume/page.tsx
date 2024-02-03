@@ -26,7 +26,7 @@ function generateMetadata() : Metadata {
 export default function ResumePage() {
   const [lastUpdated, setLastUpdated] = useState('')
   const [isLoading, setIsLoading] = useState(true)
-  const {width: vWidth,} = useViewportDimensions()
+  const {width: vWidth,} = useViewportDimensions() as {width: number,}
 
   const { width, ref } = useResizeDetector()
 
