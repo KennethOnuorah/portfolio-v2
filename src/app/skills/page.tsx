@@ -37,7 +37,7 @@ function generateMetadata() : Metadata {
 }
 
 export default function SkillsPage() {
-  const {width,} = useViewportDimensions()
+  const {width,} = useViewportDimensions() as {width: number,}
 
   return (
     <main className="mt-36 mb-24 mx-6 sm:mx-36">

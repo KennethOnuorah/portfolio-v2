@@ -14,7 +14,7 @@ import { IoLogoGithub as GitHub, IoMenu as Open, IoClose as Close } from 'react-
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const {width,} = useViewportDimensions()
+  const {width,} = useViewportDimensions() as {width: number,}
   const navRef = useRef<HTMLElement>(null)
 
   const desktopNavContent = (
