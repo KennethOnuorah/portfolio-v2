@@ -35,7 +35,7 @@ export default function Greetings() {
             onDelete={() => setIsEditing(true)}
           /></strong><span className={`text-gray-500 ${isEditing ? 'animate-none' : 'animate-blink'}`}>|</span>{width < 1024 && <br/>} with a great passion for TypeScript and UI & software technologies.
       </Typography>
-      <Slide direction="right" timeout={500} in mountOnEnter>
+      <Slide direction="left" timeout={500} in mountOnEnter>
         <Fade in>
           <Image 
             className="drop-shadow-lg shadow-black rounded-full" 

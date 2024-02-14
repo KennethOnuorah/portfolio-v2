@@ -79,7 +79,7 @@ export default function NavBar() {
     <>
       <nav
         ref={navRef}
-        className={`fixed bg-white w-full top-0 left-0 z-10 flex justify-between flex-row py-6 px-6 items-start md:items-center sm:px-24`}
+        className={`fixed bg-white w-screen top-0 left-0 z-10 flex justify-between flex-row py-6 px-6 items-start md:items-center sm:px-24`}
         onClick={() => isMenuOpen && setIsMenuOpen(false)}
       >
         <Link href={'/'} className='text-4xl font-bold'>
