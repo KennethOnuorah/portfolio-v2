@@ -49,7 +49,7 @@ export default function ResumePage() {
       <div className="flex justify-center">
         <a 
           className="transition-all flex items-center gap-1 bg-gray-300 p-2 rounded-md hover:bg-gray-100 my-4"
-          href="/docs/Resume.pdf" 
+          href={"/docs/Resume.pdf"}
           target="_blank"
         >
           <Download/>
@@ -59,7 +59,7 @@ export default function ResumePage() {
       {isLoading && <ResumeSkeleton/>}
       <div ref={ref} className={`flex justify-center ${vWidth > 600 ? 'mx-28' : 'm-0'}`}>
         <Document
-          file="/docs/Resume.pdf" 
+          file={"/docs/Resume.pdf"}
           className={'shadow-xl'}
           onLoadSuccess={() => {
             updateLastUpdatedDate()
