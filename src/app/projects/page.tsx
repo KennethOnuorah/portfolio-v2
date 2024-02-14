@@ -37,7 +37,7 @@ export default function ProjectsPage() {
           marginBottom: '64px',
         }}
       >
-        Some projects I have made in the past
+        Some projects I developed in the past
       </Typography>
       <Box sx={{ flexGrow: 1 }}>
         <Grid columns={2} container spacing={4}>
@@ -46,6 +46,15 @@ export default function ProjectsPage() {
             description="A web application that tracks and analyzes the cryptocurrency market in realtime. Made with React.js, Redux, React-Router, ApexCharts, and CoinGecko API."
             image="/images/crypto_image.png"
             repoLink="https://github.com/KennethOnuorah/CryptoTracker"
+            bp={{md:1, sm: 2, xs: 2}}
+          />
+          <Project
+            title="Blog"
+            description="A personal blog website; made w/ Next.js, TailwindCSS, and Markdown-to-JSX, Front-Matter, and Highlight.js libraries."
+            hasDemo
+            demoLink="https://kennethonuorahblog.vercel.app"
+            image="/images/blog_image2.png"
+            repoLink="https://github.com/KennethOnuorah/next-blog-website"
             bp={{md:1, sm: 2, xs: 2}}
           />
           <Project
@@ -62,13 +71,6 @@ export default function ProjectsPage() {
             hasDemo
             demoLink="https://kenneth-o-react-tunes.netlify.app/"
             repoLink="https://github.com/KennethOnuorah/React-Tunes"
-            bp={{md:1, sm: 2, xs: 2}}
-          />
-          <Project
-            title="Blogging"
-            description="A blog posting website; made w/ Next.js, TailwindCSS, and Gray Matter & Remark-HTML libraries."
-            image="/images/blog_image.png"
-            repoLink="https://github.com/KennethOnuorah/next-blog-website"
             bp={{md:1, sm: 2, xs: 2}}
           />
           <Project
