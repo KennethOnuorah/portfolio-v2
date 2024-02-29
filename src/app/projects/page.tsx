@@ -27,7 +27,7 @@ export default function ProjectsPage() {
           textAlign: 'center',
         }}
       >
-        My Projects
+        Projects
       </Typography>
       <Typography 
         variant="h6" 
