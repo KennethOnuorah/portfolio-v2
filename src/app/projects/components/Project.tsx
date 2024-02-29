@@ -29,14 +29,11 @@ export default function Project({...props} : Props) {
       <article className="">
         <a href={props.repoLink} target="_blank" rel="noopener noreferrer">
           <Image
-            className="transition-all mb-8 shadow-gray-400 shadow-xl cursor-pointer hover:-translate-y-2"
+            className="transition-all h-auto w-auto mb-8 shadow-gray-400 shadow-xl cursor-pointer hover:-translate-y-2"
             src={props.image} 
             alt={`Image of "${props.title}" project`} 
             width={0} height={0}
             sizes="100vw"
-            style={{
-              width: '100%', height: 'auto'
-            }}
             priority
           />
         </a>

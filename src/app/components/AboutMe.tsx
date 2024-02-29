@@ -38,9 +38,9 @@ export default function AboutMe() {
           </Typography>
           <Typography variant="h6" className="text-gray-500">
             <ul className="pl-8 list-disc list-inside lg:list-outside">
-              <li>Reading books 📚</li>
-              <li>Playing video games 🎮 (currently playing <em>Elden Ring</em>)</li>
-              <li>Learning to play guitar 🎸</li>
+              <li>Reading books 🤓📚</li>
+              <li>Playing video games 🎮 (currently playing <em>Elden Ring</em> ⚔️)</li>
+              <li>Learning to play guitar 🤔🎸</li>
             </ul>
           </Typography>
         </div>
